@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <title>I Miei Cartoni</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+    body {
+      background-color: #f0f4f8;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+    h1 {
+      font-size: 26px;
+      color: #2c3e50;
+      margin-bottom: 20px;
+      text-align: center;
+      font-weight: 800;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+      width: 100%;
+      max-width: 420px;
+    }
+    .card {
+      border-radius: 24px;
+      overflow: hidden;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-decoration: none;
+      padding: 12px;
+      transition: transform 0.1s ease, box-shadow 0.1s ease;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .card:active {
+      transform: scale(0.92);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    }
+    .card img {
+      width: 100%;
+      aspect-ratio: 1;
+      object-fit: cover;
+      border-radius: 18px;
+      background-color: #ffffff;
+    }
+    .card span {
+      margin-top: 8px;
+      font-size: 18px;
+      font-weight: 800;
+      color: #ffffff;
+      text-shadow: 0 1px 3px rgba(0,0,0,0.4);
+      text-align: center;
+    }
+
+    .bg-peppa { background: linear-gradient(135deg, #ff4e50, #f9d423); }
+    .bg-bluey { background: linear-gradient(135deg, #00c6ff, #0072ff); }
+    .bg-bing { background: linear-gradient(135deg, #ff0844, #ffb199); }
+    .bg-curioso { background: linear-gradient(135deg, #f12711, #f5af19); }
+    .bg-paw { background: linear-gradient(135deg, #2193b0, #6dd5ed); }
+    .bg-buster { background: linear-gradient(135deg, #ff007f, #ffab00); }
+    .bg-mrbean { background: linear-gradient(135deg, #11998e, #38ef7d); }
+    .bg-spongebob { background: linear-gradient(135deg, #ffe000, #799f0c); }
+    .bg-tonyboy { background: linear-gradient(135deg, #8e2de2, #4a00e0); }
+  </style>
+</head>
+<body>
+
+  <h1>Scegli il cartone! 📺</h1>
+
+  <div class="grid">
+    <!-- Peppa Pig -->
+    <a class="card bg-peppa" href="youtube://www.youtube.com/results?search_query=peppa+pig+italiano">
+      <img src="peppa.png" onerror="this.src='peppa.jpg'; if(!this.getAttribute('data-tried')) { this.setAttribute('data-tried', '1'); this.src='./peppa.png'; }" alt="Peppa Pig">
+      <span>Peppa Pig</span>
+    </a>
+
+    <!-- Bluey -->
+    <a class="card bg-bluey" href="youtube://www.youtube.com/results?search_query=bluey+italiano">
+      <img src="bluey.png" onerror="this.src='bluey.jpg'; if(!this.getAttribute('data-tried')) { this.setAttribute('data-tried', '1'); this.src='./bluey.png'; }" alt="Bluey">
+      <span>Bluey</span>
+    </a>
+
+    <!-- Bing -->
+    <a class="card bg-bing" href="youtube://www.youtube.com/results?search_query=bing+italiano">
+      <img src="bing.png" onerror="this.src='bing.jpg'; if(!this.getAttribute('data-tried')) { this.setAttribute('data-tried', '1'); this.src='./bing.png'; }" alt="Bing">
+      <span>Bing</span>
+    </a>
+
+    <!-- Curioso come George -->
+    <a class="card bg-curioso" href="youtube://www.youtube.com/results?search_query=curioso+come+george+italiano">
+      <img src="curioso.png" onerror="this.src='curioso.jpg'; if(!this.getAttribute('data-tried')) { this.setAttribute('data-tried', '1'); this.src='./curioso.png'; }" alt="Curioso George">
+      <span>Curioso George</span>
+    </a>
+
+    <!-- Paw Patrol -->
+    <a class="card bg-paw" href="youtube://www.youtube.com/results?search_query=paw+patrol+italiano">
+      <img src="paw.png" onerror="this.src='paw.jpg'; if(!this.getAttribute('data-tried')) { this.setAttribute('data-tried', '1'); this.src='./paw.png'; }" alt="Paw Patrol">
+      <span>Paw Patrol</span>
+    </a>
+
+    <!-- Buster il Bus -->
+    <a class="card bg-buster" href="youtube://www.youtube.com/results?search_query=buster+il+bus+italiano">
+      <img src="buster.png" onerror="this.src='buster.jpg'; if(!this.getAttribute('data-tried')) { this.setAttribute('data-tried', '1'); this.src='./buster.png'; }" alt="Buster il Bus">
+      <span>Buster il Bus</span>
+    </a>
+
+    <!-- Mr Bean (Supermercato) -->
+    <a class="card bg-mrbean" href="youtube://www.youtube.com/results?search_query=mr+bean+cartone+animato+italiano+supermercato">
+      <img src="mrbean.png" onerror="this.src='mrbean.jpg'; if(!this.getAttribute('data-tried')) { this.setAttribute('data-tried', '1'); this.src='./mrbean.png'; }" alt="Mr Bean">
+      <span>Mr Bean</span>
+    </a>
+
+    <!-- SpongeBob -->
+    <a class="card bg-spongebob" href="youtube://www.youtube.com/results?search_query=spongebob+italiano">
+      <img src="spongebob.png" onerror="this.src='spongebob.jpg'; if(!this.getAttribute('data-tried')) { this.setAttribute('data-tried', '1'); this.src='./spongebob.png'; }" alt="SpongeBob">
+      <span>SpongeBob</span>
+    </a>
+
+    <!-- Tony Boy -->
+    <a class="card bg-tonyboy" href="youtube://www.youtube.com/results?search_query=tony+boy+canzoni">
+      <img src="tonyboy.png" onerror="this.src='tonyboy.jpg'; if(!this.getAttribute('data-tried')) { this.setAttribute('data-tried', '1'); this.src='./tonyboy.png'; }" alt="Tony Boy">
+      <span>Tony Boy</span>
+    </a>
+  </div>
+
+</body>
+</html>
